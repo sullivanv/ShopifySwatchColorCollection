@@ -1,14 +1,16 @@
 # ShopifySwatchColorCollection
 A simple snippet for swatch color (like swatch.liquid on product.liquid) for collection.liquid.
 
+Demo : https://dealerdesourire.com/collections/tshirts
+
 # USAGE
-Create a snippet SwatchColorCollection
+X-Create snippet 'SwatchColorCollection.liquid'
 
-Include in product-loop.liquid or equivalent at the place you want the SwatchColor
+X-Include in product-loop.liquid or product-grid or equivalent (depend on theme) the SwatchColorCollecion snippet.
 
-Replace on the line {% if option == 'Color'... by the name of the attribute you want (color, couleur or other like size)...
+X-Replace on the line {% if option == 'Color'... by the name of the attribute you want (color, couleur or other attribute like size)...
 
-Assign at your main image in your product-loop snippet the id 'img-{{ product-id }}'
+X-Assign at your main image in your product-loop snippet the id 'img-{{ product-id }}'
 
 # OPTION
 colortab is an array of your color's name in shopify admin
