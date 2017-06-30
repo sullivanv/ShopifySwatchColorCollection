@@ -22,7 +22,7 @@ And Voila..
       	   {% assign c = color | downcase%}
 		   {% if ctab == c %}
       	   	  {% assign i = forloop.index | minus: 1%}
- 			  <div style="background-color:{{ codcolortab[i] }};margin:0 5pt;width:10pt;height:10pt;display:inline-block;border-radius:100%;border:1px solid black;cursor:pointer" onclick="$('#img-{{ product.id }}').attr('src', '{{ variant.image.src | img_url: 'large' }}')">
+ 			  <div style="background-color:{{ codcolortab[i] }};margin:0 5pt;width:10pt;height:10pt;display:inline-block;border-radius:100%;border:1px solid black;cursor:pointer" onclick="$('#img-{{ product.id }}').attr('src', '{{ variant.image.src | img_url: 'large' }}');return false;">
 			  </div>
 			{% endif%}
         {% endfor %}
